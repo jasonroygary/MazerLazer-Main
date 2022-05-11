@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <startup>
+      <towercount>3</towercount>
+    <towers>
+      <tower>
+        <tower_id>1001</tower_id>
+        <button_attached>1</button_attached>
+        <relay1>blacklight</relay1>
+        <relay2>strobe</relay2>
+        <status>1</status>
+      </tower>
+      <tower>
+        <tower_id>1002</tower_id>
+        <button_attached>1</button_attached>
+        <relay1>blacklight</relay1>
+        <relay2>strobe</relay2>
+        <status>1</status>
+      </tower>
+      <tower>
+        <tower_id>1003</tower_id>
+        <button_attached>1</button_attached>
+        <relay1>blacklight</relay1>
+        <relay2>strobe</relay2>
+        <status>1</status>
+      </tower>
+    </towers>
+  </startup>
+</root>

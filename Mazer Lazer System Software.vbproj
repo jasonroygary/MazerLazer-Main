@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{961A1DC0-B4CA-4989-B491-E18031B68956}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mazer_Lazer_System_Software.My.MyApplication</StartupObject>
+    <RootNamespace>Mazer_Lazer_System_Software</RootNamespace>
+    <AssemblyName>Mazer Lazer System Software</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mazer Lazer System Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mazer Lazer System Software.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnhancedSerialPort1">
+      <HintPath>..\EnhancedSerialPort1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Mommo.Data">
+      <HintPath>.\Mommo.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MPOST">
+      <HintPath>.\MPOST.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UNOLibs.Net">
+      <HintPath>.\UNOLibs.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillReader.designer.vb">
+      <DependentUpon>BillReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BillReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Communications.vb" />
+    <Compile Include="Ticket.Designer.vb">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataBase.vb" />
+    <Compile Include="DebugLog.vb" />
+    <Compile Include="tscreenCollectScorecard.Designer.vb">
+      <DependentUpon>tscreenCollectScorecard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenCollectScorecard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenDoYouHaveACodeName.Designer.vb">
+      <DependentUpon>tscreenDoYouHaveACodeName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenDoYouHaveACodeName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenGetTicketBelow.Designer.vb">
+      <DependentUpon>tscreenGetTicketBelow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenGetTicketBelow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenInstructions.Designer.vb">
+      <DependentUpon>tscreenInstructions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenInstructions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenPlayerID.Designer.vb">
+      <DependentUpon>tscreenPlayerID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenPlayerID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameMaze.vb" />
+    <Compile Include="PacketProcessing.vb" />
+    <Compile Include="tscreenPSEWarning.Designer.vb">
+      <DependentUpon>tscreenPSEWarning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenPSEWarning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreboardScreen.Designer.vb">
+      <DependentUpon>ScoreboardScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreboardScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scorecard.Designer.vb">
+      <DependentUpon>Scorecard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scorecard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemGlobal.vb" />
+    <Compile Include="IniFile.vb" />
+    <Compile Include="ConsoleScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsoleScreen.Designer.vb">
+      <DependentUpon>ConsoleScreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemStartup.Designer.vb">
+      <DependentUpon>SystemStartup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SystemStartup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TcpipCom.vb" />
+    <Compile Include="tscreenEnterMaze.Designer.vb">
+      <DependentUpon>tscreenEnterMaze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenEnterMaze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenGameRunning.Designer.vb">
+      <DependentUpon>tscreenGameRunning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenGameRunning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tscreenLevel.Designer.vb">
+      <DependentUpon>tscreenLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VideoModule.vb" />
+    <Compile Include="ShellAndWait.vb" />
+    <Compile Include="tscreenInsertPaymentScreen.Designer.vb">
+      <DependentUpon>tscreenInsertPaymentScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tscreenInsertPaymentScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XBee.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BillReader.resx">
+      <DependentUpon>BillReader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsoleScreen.resx">
+      <DependentUpon>ConsoleScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.resx">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenCollectScorecard.resx">
+      <DependentUpon>tscreenCollectScorecard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenDoYouHaveACodeName.resx">
+      <DependentUpon>tscreenDoYouHaveACodeName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenGetTicketBelow.resx">
+      <DependentUpon>tscreenGetTicketBelow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenInstructions.resx">
+      <DependentUpon>tscreenInstructions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenPlayerID.resx">
+      <DependentUpon>tscreenPlayerID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenPSEWarning.resx">
+      <DependentUpon>tscreenPSEWarning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenInsertPaymentScreen.resx">
+      <DependentUpon>tscreenInsertPaymentScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreboardScreen.resx">
+      <DependentUpon>ScoreboardScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scorecard.resx">
+      <DependentUpon>Scorecard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemStartup.resx">
+      <DependentUpon>SystemStartup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenEnterMaze.resx">
+      <DependentUpon>tscreenEnterMaze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenGameRunning.resx">
+      <DependentUpon>tscreenGameRunning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tscreenLevel.resx">
+      <DependentUpon>tscreenLevel.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Mazer Lazer System Software.exe" />
+    <Content Include="bin\Debug\Mazer Lazer System Software.pdb" />
+    <Content Include="..\..\..\..\..\..\..\MazerLazer\MazerLazer.xml">
+      <SubType>Designer</SubType>
+      <Link>MazerLazer.xml</Link>
+    </Content>
+    <None Include="Resources\insertPaymentBubble v2.png" />
+    <None Include="Resources\insertPaymentBubble.png" />
+    <None Include="Resources\TicketBelow-Arrow2.png" />
+    <None Include="Resources\InstructionsBubble2.png" />
+    <None Include="Resources\InstructionsBubble1.png" />
+    <None Include="Resources\InstructionsBubble.png" />
+    <None Include="Resources\TicketBelow-Arrow.png" />
+    <None Include="Resources\Ticket-Arrow.png" />
+    <None Include="Resources\woodsLogo.gif" />
+    <None Include="laser2.jpg" />
+    <None Include="lasers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXCASTLib">
+      <Guid>{F6F1E404-7D61-4092-892B-2E74CDC50740}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Domino">
+      <Guid>{29131520-2EED-1069-BF5D-00DD011186B7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="lotus">
+      <Guid>{1CF542E0-D988-11CF-B485-00805F98FACE}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XCASTLib">
+      <Guid>{F6F1E404-7D61-4092-892B-2E74CDC50740}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
